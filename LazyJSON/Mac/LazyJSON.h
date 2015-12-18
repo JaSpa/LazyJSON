@@ -6,7 +6,7 @@
 //  Copyright © 2015 jds. All rights reserved.
 //
 
-#import <Cocoa/Cocoa.h>
+#import <Foundation/Foundation.h>
 
 //! Project version number for LazyJSON.
 FOUNDATION_EXPORT double LazyJSONVersionNumber;

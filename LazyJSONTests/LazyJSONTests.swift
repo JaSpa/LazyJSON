@@ -7,30 +7,39 @@
 //
 
 import XCTest
-@testable import LazyJSON
+import LazyJSON
+
+enum NilError: ErrorType {
+    case Unexpected(String)
+}
 
 class LazyJSONTests: XCTestCase {
-    
-    override func setUp() {
-        super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
-    
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
-    }
-    
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measureBlock {
-            // Put the code you want to measure the time of here.
+
+    func testPerformance() {
+        do {
+            guard let data =
+                NSBundle(forClass: LazyJSONTests.self)
+                    .URLForResource("big_data", withExtension: "json")
+                    .flatMap(NSData.init) else {
+
+                throw NilError.Unexpected("can't load the json file")
+            }
+
+            let json = try NSJSONSerialization.JSONObjectWithData(data, options: [])
+            var firstElem: [TestModel]? = nil
+
+            measureBlock {
+                do {
+                    let parsed = try [TestModel].decode(json, root: "types")
+                    if firstElem == nil { firstElem = parsed }
+                } catch {
+                    XCTFail("unexpected error: \(error)")
+                }
+            }
+
+            print(firstElem?.count ?? 0, "elements parsed")
+        } catch {
+            XCTFail("unexpected error: \(error)")
         }
     }
-    
 }

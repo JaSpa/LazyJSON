@@ -7,9 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2188DCD41C20D5C7003242F2 /* LazyJSON.h in Headers */ = {isa = PBXBuildFile; fileRef = 2188DCD31C20D5C7003242F2 /* LazyJSON.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2180852F1C22032A0085DA90 /* JSONError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2180852E1C22032A0085DA90 /* JSONError.swift */; };
+		218085331C220ED00085DA90 /* KeyPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218085321C220ED00085DA90 /* KeyPath.swift */; };
+		218085351C22120A0085DA90 /* Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218085341C22120A0085DA90 /* Decodable.swift */; };
+		218085371C2213010085DA90 /* StandardTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218085361C2213010085DA90 /* StandardTypes.swift */; };
 		2188DCDB1C20D5C8003242F2 /* LazyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2188DCD01C20D5C7003242F2 /* LazyJSON.framework */; };
 		2188DCE01C20D5C8003242F2 /* LazyJSONTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2188DCDF1C20D5C8003242F2 /* LazyJSONTests.swift */; };
+		21BFA9271C2385D600901217 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2188DCEA1C20D5EF003242F2 /* JSON.swift */; };
+		21BFA9281C2385EB00901217 /* Decoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BFA9251C237CB200901217 /* Decoding.swift */; };
+		21BFA9291C23886400901217 /* FunctionalStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BFA9231C237BDD00901217 /* FunctionalStyle.swift */; };
+		21BFA92B1C23908900901217 /* TestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BFA92A1C23908800901217 /* TestModel.swift */; };
+		21BFA92D1C24738500901217 /* big_data.json in Resources */ = {isa = PBXBuildFile; fileRef = 21BFA92C1C24738500901217 /* big_data.json */; };
+		21BFA9441C24A81300901217 /* LazyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BFA9331C24A7F700901217 /* LazyJSON.framework */; };
+		21BFA9571C24A8CC00901217 /* LazyJSON.h in Headers */ = {isa = PBXBuildFile; fileRef = 21BFA9551C24A8CC00901217 /* LazyJSON.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		21BFA95C1C24A8E000901217 /* LazyJSON.h in Headers */ = {isa = PBXBuildFile; fileRef = 21BFA95A1C24A8DF00901217 /* LazyJSON.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		21BFA95D1C24AAC400901217 /* Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218085341C22120A0085DA90 /* Decodable.swift */; };
+		21BFA95E1C24AAC400901217 /* Decoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BFA9251C237CB200901217 /* Decoding.swift */; };
+		21BFA95F1C24AAC400901217 /* StandardTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218085361C2213010085DA90 /* StandardTypes.swift */; };
+		21BFA9601C24AAC400901217 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2188DCEA1C20D5EF003242F2 /* JSON.swift */; };
+		21BFA9611C24AAC400901217 /* KeyPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218085321C220ED00085DA90 /* KeyPath.swift */; };
+		21BFA9621C24AAC400901217 /* JSONError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2180852E1C22032A0085DA90 /* JSONError.swift */; };
+		21BFA9631C24AAC400901217 /* FunctionalStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BFA9231C237BDD00901217 /* FunctionalStyle.swift */; };
+		21BFA9661C24AAE100901217 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 21BFA9651C24AAE100901217 /* Info.plist */; };
+		21BFA9671C24AB0F00901217 /* LazyJSONTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2188DCDF1C20D5C8003242F2 /* LazyJSONTests.swift */; };
+		21BFA9681C24AB0F00901217 /* TestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BFA92A1C23908800901217 /* TestModel.swift */; };
+		21BFA9691C24AB0F00901217 /* big_data.json in Resources */ = {isa = PBXBuildFile; fileRef = 21BFA92C1C24738500901217 /* big_data.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -20,15 +42,36 @@
 			remoteGlobalIDString = 2188DCCF1C20D5C7003242F2;
 			remoteInfo = LazyJSON;
 		};
+		21BFA9451C24A81300901217 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2188DCC71C20D5C7003242F2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 21BFA9321C24A7F700901217;
+			remoteInfo = "LazyJSON-iOS";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2180852E1C22032A0085DA90 /* JSONError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONError.swift; sourceTree = "<group>"; };
+		218085321C220ED00085DA90 /* KeyPath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyPath.swift; sourceTree = "<group>"; };
+		218085341C22120A0085DA90 /* Decodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Decodable.swift; sourceTree = "<group>"; };
+		218085361C2213010085DA90 /* StandardTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StandardTypes.swift; sourceTree = "<group>"; };
 		2188DCD01C20D5C7003242F2 /* LazyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LazyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2188DCD31C20D5C7003242F2 /* LazyJSON.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LazyJSON.h; sourceTree = "<group>"; };
-		2188DCD51C20D5C7003242F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2188DCDA1C20D5C8003242F2 /* LazyJSONTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LazyJSONTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2188DCDF1C20D5C8003242F2 /* LazyJSONTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyJSONTests.swift; sourceTree = "<group>"; };
-		2188DCE11C20D5C8003242F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2188DCEA1C20D5EF003242F2 /* JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
+		21BFA9231C237BDD00901217 /* FunctionalStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunctionalStyle.swift; sourceTree = "<group>"; };
+		21BFA9251C237CB200901217 /* Decoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Decoding.swift; sourceTree = "<group>"; };
+		21BFA92A1C23908800901217 /* TestModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestModel.swift; sourceTree = "<group>"; };
+		21BFA92C1C24738500901217 /* big_data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = big_data.json; sourceTree = "<group>"; };
+		21BFA9331C24A7F700901217 /* LazyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LazyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		21BFA93F1C24A81300901217 /* LazyJSONTests-iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "LazyJSONTests-iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		21BFA9541C24A8CC00901217 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		21BFA9551C24A8CC00901217 /* LazyJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LazyJSON.h; sourceTree = "<group>"; };
+		21BFA9591C24A8DF00901217 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		21BFA95A1C24A8DF00901217 /* LazyJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LazyJSON.h; sourceTree = "<group>"; };
+		21BFA9651C24AAE100901217 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		21BFA96E1C24ABF200901217 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +87,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				2188DCDB1C20D5C8003242F2 /* LazyJSON.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21BFA92F1C24A7F700901217 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21BFA93C1C24A81300901217 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21BFA9441C24A81300901217 /* LazyJSON.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +122,8 @@
 			children = (
 				2188DCD01C20D5C7003242F2 /* LazyJSON.framework */,
 				2188DCDA1C20D5C8003242F2 /* LazyJSONTests.xctest */,
+				21BFA9331C24A7F700901217 /* LazyJSON.framework */,
+				21BFA93F1C24A81300901217 /* LazyJSONTests-iOS.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -71,8 +131,15 @@
 		2188DCD21C20D5C7003242F2 /* LazyJSON */ = {
 			isa = PBXGroup;
 			children = (
-				2188DCD31C20D5C7003242F2 /* LazyJSON.h */,
-				2188DCD51C20D5C7003242F2 /* Info.plist */,
+				218085341C22120A0085DA90 /* Decodable.swift */,
+				21BFA9251C237CB200901217 /* Decoding.swift */,
+				218085361C2213010085DA90 /* StandardTypes.swift */,
+				2188DCEA1C20D5EF003242F2 /* JSON.swift */,
+				218085321C220ED00085DA90 /* KeyPath.swift */,
+				2180852E1C22032A0085DA90 /* JSONError.swift */,
+				21BFA9231C237BDD00901217 /* FunctionalStyle.swift */,
+				21BFA9581C24A8DF00901217 /* iOS */,
+				21BFA9531C24A8CC00901217 /* Mac */,
 			);
 			path = LazyJSON;
 			sourceTree = "<group>";
@@ -81,9 +148,46 @@
 			isa = PBXGroup;
 			children = (
 				2188DCDF1C20D5C8003242F2 /* LazyJSONTests.swift */,
-				2188DCE11C20D5C8003242F2 /* Info.plist */,
+				21BFA92A1C23908800901217 /* TestModel.swift */,
+				21BFA92C1C24738500901217 /* big_data.json */,
+				21BFA9641C24AAE100901217 /* iOS */,
+				21BFA96D1C24ABF200901217 /* Mac */,
 			);
 			path = LazyJSONTests;
+			sourceTree = "<group>";
+		};
+		21BFA9531C24A8CC00901217 /* Mac */ = {
+			isa = PBXGroup;
+			children = (
+				21BFA9541C24A8CC00901217 /* Info.plist */,
+				21BFA9551C24A8CC00901217 /* LazyJSON.h */,
+			);
+			path = Mac;
+			sourceTree = "<group>";
+		};
+		21BFA9581C24A8DF00901217 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				21BFA9591C24A8DF00901217 /* Info.plist */,
+				21BFA95A1C24A8DF00901217 /* LazyJSON.h */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		21BFA9641C24AAE100901217 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				21BFA9651C24AAE100901217 /* Info.plist */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		21BFA96D1C24ABF200901217 /* Mac */ = {
+			isa = PBXGroup;
+			children = (
+				21BFA96E1C24ABF200901217 /* Info.plist */,
+			);
+			path = Mac;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -93,16 +197,24 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2188DCD41C20D5C7003242F2 /* LazyJSON.h in Headers */,
+				21BFA9571C24A8CC00901217 /* LazyJSON.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21BFA9301C24A7F700901217 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21BFA95C1C24A8E000901217 /* LazyJSON.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		2188DCCF1C20D5C7003242F2 /* LazyJSON */ = {
+		2188DCCF1C20D5C7003242F2 /* LazyJSON-Mac */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2188DCE41C20D5C8003242F2 /* Build configuration list for PBXNativeTarget "LazyJSON" */;
+			buildConfigurationList = 2188DCE41C20D5C8003242F2 /* Build configuration list for PBXNativeTarget "LazyJSON-Mac" */;
 			buildPhases = (
 				2188DCCB1C20D5C7003242F2 /* Sources */,
 				2188DCCC1C20D5C7003242F2 /* Frameworks */,
@@ -113,14 +225,14 @@
 			);
 			dependencies = (
 			);
-			name = LazyJSON;
+			name = "LazyJSON-Mac";
 			productName = LazyJSON;
 			productReference = 2188DCD01C20D5C7003242F2 /* LazyJSON.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		2188DCD91C20D5C8003242F2 /* LazyJSONTests */ = {
+		2188DCD91C20D5C8003242F2 /* LazyJSONTests-Mac */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2188DCE71C20D5C8003242F2 /* Build configuration list for PBXNativeTarget "LazyJSONTests" */;
+			buildConfigurationList = 2188DCE71C20D5C8003242F2 /* Build configuration list for PBXNativeTarget "LazyJSONTests-Mac" */;
 			buildPhases = (
 				2188DCD61C20D5C8003242F2 /* Sources */,
 				2188DCD71C20D5C8003242F2 /* Frameworks */,
@@ -131,9 +243,45 @@
 			dependencies = (
 				2188DCDD1C20D5C8003242F2 /* PBXTargetDependency */,
 			);
-			name = LazyJSONTests;
+			name = "LazyJSONTests-Mac";
 			productName = LazyJSONTests;
 			productReference = 2188DCDA1C20D5C8003242F2 /* LazyJSONTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		21BFA9321C24A7F700901217 /* LazyJSON-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 21BFA9381C24A7F700901217 /* Build configuration list for PBXNativeTarget "LazyJSON-iOS" */;
+			buildPhases = (
+				21BFA92E1C24A7F700901217 /* Sources */,
+				21BFA92F1C24A7F700901217 /* Frameworks */,
+				21BFA9301C24A7F700901217 /* Headers */,
+				21BFA9311C24A7F700901217 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "LazyJSON-iOS";
+			productName = "LazyJSON-iOS";
+			productReference = 21BFA9331C24A7F700901217 /* LazyJSON.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		21BFA93E1C24A81300901217 /* LazyJSONTests-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 21BFA9471C24A81300901217 /* Build configuration list for PBXNativeTarget "LazyJSONTests-iOS" */;
+			buildPhases = (
+				21BFA93B1C24A81300901217 /* Sources */,
+				21BFA93C1C24A81300901217 /* Frameworks */,
+				21BFA93D1C24A81300901217 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				21BFA9461C24A81300901217 /* PBXTargetDependency */,
+			);
+			name = "LazyJSONTests-iOS";
+			productName = "LazyJSONTests-iOS";
+			productReference = 21BFA93F1C24A81300901217 /* LazyJSONTests-iOS.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -152,6 +300,14 @@
 					2188DCD91C20D5C8003242F2 = {
 						CreatedOnToolsVersion = 7.2;
 					};
+					21BFA9321C24A7F700901217 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 3J7C56C6SY;
+					};
+					21BFA93E1C24A81300901217 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 3J7C56C6SY;
+					};
 				};
 			};
 			buildConfigurationList = 2188DCCA1C20D5C7003242F2 /* Build configuration list for PBXProject "LazyJSON" */;
@@ -166,8 +322,10 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2188DCCF1C20D5C7003242F2 /* LazyJSON */,
-				2188DCD91C20D5C8003242F2 /* LazyJSONTests */,
+				2188DCCF1C20D5C7003242F2 /* LazyJSON-Mac */,
+				2188DCD91C20D5C8003242F2 /* LazyJSONTests-Mac */,
+				21BFA9321C24A7F700901217 /* LazyJSON-iOS */,
+				21BFA93E1C24A81300901217 /* LazyJSONTests-iOS */,
 			);
 		};
 /* End PBXProject section */
@@ -184,6 +342,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21BFA92D1C24738500901217 /* big_data.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21BFA9311C24A7F700901217 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21BFA9661C24AAE100901217 /* Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21BFA93D1C24A81300901217 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21BFA9691C24AB0F00901217 /* big_data.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,6 +369,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				218085331C220ED00085DA90 /* KeyPath.swift in Sources */,
+				21BFA9271C2385D600901217 /* JSON.swift in Sources */,
+				218085351C22120A0085DA90 /* Decodable.swift in Sources */,
+				2180852F1C22032A0085DA90 /* JSONError.swift in Sources */,
+				21BFA9291C23886400901217 /* FunctionalStyle.swift in Sources */,
+				21BFA9281C2385EB00901217 /* Decoding.swift in Sources */,
+				218085371C2213010085DA90 /* StandardTypes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,6 +384,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				2188DCE01C20D5C8003242F2 /* LazyJSONTests.swift in Sources */,
+				21BFA92B1C23908900901217 /* TestModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21BFA92E1C24A7F700901217 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21BFA9621C24AAC400901217 /* JSONError.swift in Sources */,
+				21BFA95E1C24AAC400901217 /* Decoding.swift in Sources */,
+				21BFA9611C24AAC400901217 /* KeyPath.swift in Sources */,
+				21BFA95F1C24AAC400901217 /* StandardTypes.swift in Sources */,
+				21BFA95D1C24AAC400901217 /* Decodable.swift in Sources */,
+				21BFA9631C24AAC400901217 /* FunctionalStyle.swift in Sources */,
+				21BFA9601C24AAC400901217 /* JSON.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21BFA93B1C24A81300901217 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21BFA9671C24AB0F00901217 /* LazyJSONTests.swift in Sources */,
+				21BFA9681C24AB0F00901217 /* TestModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,8 +416,13 @@
 /* Begin PBXTargetDependency section */
 		2188DCDD1C20D5C8003242F2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2188DCCF1C20D5C7003242F2 /* LazyJSON */;
+			target = 2188DCCF1C20D5C7003242F2 /* LazyJSON-Mac */;
 			targetProxy = 2188DCDC1C20D5C8003242F2 /* PBXContainerItemProxy */;
+		};
+		21BFA9461C24A81300901217 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 21BFA9321C24A7F700901217 /* LazyJSON-iOS */;
+			targetProxy = 21BFA9451C24A81300901217 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -305,6 +516,7 @@
 		2188DCE51C20D5C8003242F2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
 				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -312,11 +524,11 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = LazyJSON/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/LazyJSON/Mac/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = eu.spaderna.LazyJSON;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = LazyJSON;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -325,6 +537,7 @@
 		2188DCE61C20D5C8003242F2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
 				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -332,11 +545,11 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = LazyJSON/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/LazyJSON/Mac/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = eu.spaderna.LazyJSON;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = LazyJSON;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -346,7 +559,7 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = LazyJSONTests/Info.plist;
+				INFOPLIST_FILE = LazyJSONTests/Mac/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = eu.spaderna.LazyJSONTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -359,10 +572,78 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = LazyJSONTests/Info.plist;
+				INFOPLIST_FILE = LazyJSONTests/Mac/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = eu.spaderna.LazyJSONTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		21BFA9391C24A7F700901217 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "$(SRCROOT)/LazyJSON/iOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "eu.spaderna.LazyJSON-iOS";
+				PRODUCT_NAME = LazyJSON;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		21BFA93A1C24A7F700901217 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "$(SRCROOT)/LazyJSON/iOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "eu.spaderna.LazyJSON-iOS";
+				PRODUCT_NAME = LazyJSON;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		21BFA9481C24A81300901217 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = LazyJSONTests/iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "eu.spaderna.LazyJSONTests-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		21BFA9491C24A81300901217 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = LazyJSONTests/iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "eu.spaderna.LazyJSONTests-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
@@ -378,7 +659,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2188DCE41C20D5C8003242F2 /* Build configuration list for PBXNativeTarget "LazyJSON" */ = {
+		2188DCE41C20D5C8003242F2 /* Build configuration list for PBXNativeTarget "LazyJSON-Mac" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2188DCE51C20D5C8003242F2 /* Debug */,
@@ -387,7 +668,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2188DCE71C20D5C8003242F2 /* Build configuration list for PBXNativeTarget "LazyJSONTests" */ = {
+		2188DCE71C20D5C8003242F2 /* Build configuration list for PBXNativeTarget "LazyJSONTests-Mac" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2188DCE81C20D5C8003242F2 /* Debug */,
@@ -395,6 +676,22 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		21BFA9381C24A7F700901217 /* Build configuration list for PBXNativeTarget "LazyJSON-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				21BFA9391C24A7F700901217 /* Debug */,
+				21BFA93A1C24A7F700901217 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		21BFA9471C24A81300901217 /* Build configuration list for PBXNativeTarget "LazyJSONTests-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				21BFA9481C24A81300901217 /* Debug */,
+				21BFA9491C24A81300901217 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
