@@ -32,6 +32,19 @@
 		21BFA9671C24AB0F00901217 /* LazyJSONTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2188DCDF1C20D5C8003242F2 /* LazyJSONTests.swift */; };
 		21BFA9681C24AB0F00901217 /* TestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BFA92A1C23908800901217 /* TestModel.swift */; };
 		21BFA9691C24AB0F00901217 /* big_data.json in Resources */ = {isa = PBXBuildFile; fileRef = 21BFA92C1C24738500901217 /* big_data.json */; };
+		21BFA9881C24BA0B00901217 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BFA9871C24BA0B00901217 /* AppDelegate.swift */; };
+		21BFA98A1C24BA0B00901217 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BFA9891C24BA0B00901217 /* ViewController.swift */; };
+		21BFA98D1C24BA0B00901217 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21BFA98B1C24BA0B00901217 /* Main.storyboard */; };
+		21BFA98F1C24BA0B00901217 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21BFA98E1C24BA0B00901217 /* Assets.xcassets */; };
+		21BFA9921C24BA0B00901217 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21BFA9901C24BA0B00901217 /* LaunchScreen.storyboard */; };
+		21BFA99E1C24BA2400901217 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BFA99D1C24BA2400901217 /* AppDelegate.swift */; };
+		21BFA9A01C24BA2400901217 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BFA99F1C24BA2400901217 /* ViewController.swift */; };
+		21BFA9A21C24BA2400901217 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21BFA9A11C24BA2400901217 /* Assets.xcassets */; };
+		21BFA9A51C24BA2400901217 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21BFA9A31C24BA2400901217 /* Main.storyboard */; };
+		21BFA9AB1C24BA5A00901217 /* test.json in Resources */ = {isa = PBXBuildFile; fileRef = 21BFA9AA1C24BA5A00901217 /* test.json */; };
+		21BFA9AD1C24BB7700901217 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BFA9AC1C24BB7700901217 /* Person.swift */; };
+		21BFA9AE1C24BC1C00901217 /* LazyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BFA9331C24A7F700901217 /* LazyJSON.framework */; };
+		21BFA9AF1C24BC1C00901217 /* LazyJSON.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 21BFA9331C24A7F700901217 /* LazyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,7 +62,28 @@
 			remoteGlobalIDString = 21BFA9321C24A7F700901217;
 			remoteInfo = "LazyJSON-iOS";
 		};
+		21BFA9B01C24BC1C00901217 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2188DCC71C20D5C7003242F2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 21BFA9321C24A7F700901217;
+			remoteInfo = "LazyJSON-iOS";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		21BFA9B21C24BC1D00901217 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				21BFA9AF1C24BC1C00901217 /* LazyJSON.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		2180852E1C22032A0085DA90 /* JSONError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONError.swift; sourceTree = "<group>"; };
@@ -57,7 +91,7 @@
 		218085341C22120A0085DA90 /* Decodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Decodable.swift; sourceTree = "<group>"; };
 		218085361C2213010085DA90 /* StandardTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StandardTypes.swift; sourceTree = "<group>"; };
 		2188DCD01C20D5C7003242F2 /* LazyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LazyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2188DCDA1C20D5C8003242F2 /* LazyJSONTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LazyJSONTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2188DCDA1C20D5C8003242F2 /* LazyJSONTests-Mac.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "LazyJSONTests-Mac.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2188DCDF1C20D5C8003242F2 /* LazyJSONTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyJSONTests.swift; sourceTree = "<group>"; };
 		2188DCEA1C20D5EF003242F2 /* JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
 		21BFA9231C237BDD00901217 /* FunctionalStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunctionalStyle.swift; sourceTree = "<group>"; };
@@ -72,6 +106,21 @@
 		21BFA95A1C24A8DF00901217 /* LazyJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LazyJSON.h; sourceTree = "<group>"; };
 		21BFA9651C24AAE100901217 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		21BFA96E1C24ABF200901217 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		21BFA9851C24BA0A00901217 /* Profiler-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Profiler-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		21BFA9871C24BA0B00901217 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		21BFA9891C24BA0B00901217 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		21BFA98C1C24BA0B00901217 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		21BFA98E1C24BA0B00901217 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		21BFA9911C24BA0B00901217 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		21BFA9931C24BA0B00901217 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		21BFA99B1C24BA2300901217 /* Profiler-Mac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Profiler-Mac.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		21BFA99D1C24BA2400901217 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		21BFA99F1C24BA2400901217 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		21BFA9A11C24BA2400901217 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		21BFA9A41C24BA2400901217 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		21BFA9A61C24BA2400901217 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		21BFA9AA1C24BA5A00901217 /* test.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = test.json; sourceTree = "<group>"; };
+		21BFA9AC1C24BB7700901217 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +154,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		21BFA9821C24BA0A00901217 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21BFA9AE1C24BC1C00901217 /* LazyJSON.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21BFA9981C24BA2300901217 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -113,6 +177,8 @@
 			children = (
 				2188DCD21C20D5C7003242F2 /* LazyJSON */,
 				2188DCDE1C20D5C8003242F2 /* LazyJSONTests */,
+				21BFA99C1C24BA2400901217 /* Profiler-Mac */,
+				21BFA9861C24BA0B00901217 /* Profiler-iOS */,
 				2188DCD11C20D5C7003242F2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -121,9 +187,11 @@
 			isa = PBXGroup;
 			children = (
 				2188DCD01C20D5C7003242F2 /* LazyJSON.framework */,
-				2188DCDA1C20D5C8003242F2 /* LazyJSONTests.xctest */,
+				2188DCDA1C20D5C8003242F2 /* LazyJSONTests-Mac.xctest */,
 				21BFA9331C24A7F700901217 /* LazyJSON.framework */,
 				21BFA93F1C24A81300901217 /* LazyJSONTests-iOS.xctest */,
+				21BFA9851C24BA0A00901217 /* Profiler-iOS.app */,
+				21BFA99B1C24BA2300901217 /* Profiler-Mac.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -190,6 +258,33 @@
 			path = Mac;
 			sourceTree = "<group>";
 		};
+		21BFA9861C24BA0B00901217 /* Profiler-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				21BFA9871C24BA0B00901217 /* AppDelegate.swift */,
+				21BFA9891C24BA0B00901217 /* ViewController.swift */,
+				21BFA9AC1C24BB7700901217 /* Person.swift */,
+				21BFA98B1C24BA0B00901217 /* Main.storyboard */,
+				21BFA98E1C24BA0B00901217 /* Assets.xcassets */,
+				21BFA9901C24BA0B00901217 /* LaunchScreen.storyboard */,
+				21BFA9931C24BA0B00901217 /* Info.plist */,
+				21BFA9AA1C24BA5A00901217 /* test.json */,
+			);
+			path = "Profiler-iOS";
+			sourceTree = "<group>";
+		};
+		21BFA99C1C24BA2400901217 /* Profiler-Mac */ = {
+			isa = PBXGroup;
+			children = (
+				21BFA99D1C24BA2400901217 /* AppDelegate.swift */,
+				21BFA99F1C24BA2400901217 /* ViewController.swift */,
+				21BFA9A11C24BA2400901217 /* Assets.xcassets */,
+				21BFA9A31C24BA2400901217 /* Main.storyboard */,
+				21BFA9A61C24BA2400901217 /* Info.plist */,
+			);
+			path = "Profiler-Mac";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -245,7 +340,7 @@
 			);
 			name = "LazyJSONTests-Mac";
 			productName = LazyJSONTests;
-			productReference = 2188DCDA1C20D5C8003242F2 /* LazyJSONTests.xctest */;
+			productReference = 2188DCDA1C20D5C8003242F2 /* LazyJSONTests-Mac.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		21BFA9321C24A7F700901217 /* LazyJSON-iOS */ = {
@@ -284,6 +379,42 @@
 			productReference = 21BFA93F1C24A81300901217 /* LazyJSONTests-iOS.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		21BFA9841C24BA0A00901217 /* Profiler-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 21BFA9941C24BA0B00901217 /* Build configuration list for PBXNativeTarget "Profiler-iOS" */;
+			buildPhases = (
+				21BFA9811C24BA0A00901217 /* Sources */,
+				21BFA9821C24BA0A00901217 /* Frameworks */,
+				21BFA9831C24BA0A00901217 /* Resources */,
+				21BFA9B21C24BC1D00901217 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				21BFA9B11C24BC1C00901217 /* PBXTargetDependency */,
+			);
+			name = "Profiler-iOS";
+			productName = "Profiler-iOS";
+			productReference = 21BFA9851C24BA0A00901217 /* Profiler-iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		21BFA99A1C24BA2300901217 /* Profiler-Mac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 21BFA9A71C24BA2400901217 /* Build configuration list for PBXNativeTarget "Profiler-Mac" */;
+			buildPhases = (
+				21BFA9971C24BA2300901217 /* Sources */,
+				21BFA9981C24BA2300901217 /* Frameworks */,
+				21BFA9991C24BA2300901217 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Profiler-Mac";
+			productName = "Profiler-Mac";
+			productReference = 21BFA99B1C24BA2300901217 /* Profiler-Mac.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -308,6 +439,13 @@
 						CreatedOnToolsVersion = 7.2;
 						DevelopmentTeam = 3J7C56C6SY;
 					};
+					21BFA9841C24BA0A00901217 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 3J7C56C6SY;
+					};
+					21BFA99A1C24BA2300901217 = {
+						CreatedOnToolsVersion = 7.2;
+					};
 				};
 			};
 			buildConfigurationList = 2188DCCA1C20D5C7003242F2 /* Build configuration list for PBXProject "LazyJSON" */;
@@ -316,6 +454,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 2188DCC61C20D5C7003242F2;
 			productRefGroup = 2188DCD11C20D5C7003242F2 /* Products */;
@@ -326,6 +465,8 @@
 				2188DCD91C20D5C8003242F2 /* LazyJSONTests-Mac */,
 				21BFA9321C24A7F700901217 /* LazyJSON-iOS */,
 				21BFA93E1C24A81300901217 /* LazyJSONTests-iOS */,
+				21BFA99A1C24BA2300901217 /* Profiler-Mac */,
+				21BFA9841C24BA0A00901217 /* Profiler-iOS */,
 			);
 		};
 /* End PBXProject section */
@@ -359,6 +500,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				21BFA9691C24AB0F00901217 /* big_data.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21BFA9831C24BA0A00901217 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21BFA9921C24BA0B00901217 /* LaunchScreen.storyboard in Resources */,
+				21BFA9AB1C24BA5A00901217 /* test.json in Resources */,
+				21BFA98F1C24BA0B00901217 /* Assets.xcassets in Resources */,
+				21BFA98D1C24BA0B00901217 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21BFA9991C24BA2300901217 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21BFA9A21C24BA2400901217 /* Assets.xcassets in Resources */,
+				21BFA9A51C24BA2400901217 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,6 +572,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		21BFA9811C24BA0A00901217 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21BFA9AD1C24BB7700901217 /* Person.swift in Sources */,
+				21BFA98A1C24BA0B00901217 /* ViewController.swift in Sources */,
+				21BFA9881C24BA0B00901217 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21BFA9971C24BA2300901217 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21BFA9A01C24BA2400901217 /* ViewController.swift in Sources */,
+				21BFA99E1C24BA2400901217 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -424,7 +604,39 @@
 			target = 21BFA9321C24A7F700901217 /* LazyJSON-iOS */;
 			targetProxy = 21BFA9451C24A81300901217 /* PBXContainerItemProxy */;
 		};
+		21BFA9B11C24BC1C00901217 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 21BFA9321C24A7F700901217 /* LazyJSON-iOS */;
+			targetProxy = 21BFA9B01C24BC1C00901217 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		21BFA98B1C24BA0B00901217 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				21BFA98C1C24BA0B00901217 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		21BFA9901C24BA0B00901217 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				21BFA9911C24BA0B00901217 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		21BFA9A31C24BA2400901217 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				21BFA9A41C24BA2400901217 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		2188DCE21C20D5C8003242F2 /* Debug */ = {
@@ -647,6 +859,63 @@
 			};
 			name = Release;
 		};
+		21BFA9951C24BA0B00901217 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = "Profiler-iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "eu.spaderna.Profiler-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		21BFA9961C24BA0B00901217 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = "Profiler-iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "eu.spaderna.Profiler-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		21BFA9A81C24BA2400901217 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Profiler-Mac/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "eu.spaderna.Profiler-Mac";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		21BFA9A91C24BA2400901217 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Profiler-Mac/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "eu.spaderna.Profiler-Mac";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -690,6 +959,22 @@
 			buildConfigurations = (
 				21BFA9481C24A81300901217 /* Debug */,
 				21BFA9491C24A81300901217 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		21BFA9941C24BA0B00901217 /* Build configuration list for PBXNativeTarget "Profiler-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				21BFA9951C24BA0B00901217 /* Debug */,
+				21BFA9961C24BA0B00901217 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		21BFA9A71C24BA2400901217 /* Build configuration list for PBXNativeTarget "Profiler-Mac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				21BFA9A81C24BA2400901217 /* Debug */,
+				21BFA9A91C24BA2400901217 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
