@@ -110,16 +110,16 @@ public struct JSON {
         var json = self
 
         for key in path {
-            let path = data.path + key
+            let path = json.data.path + key
 
             switch key {
                 case let .Key(key):
-                    let object: NSDictionary = try data.get()
+                    let object: NSDictionary = try json.data.get()
                     guard let value = object[key] else { throw JSONError.MissingKey(path: path) }
                     json = JSON(value, path: path)
 
                 case let .Index(idx):
-                    let array: NSArray = try data.get()
+                    let array: NSArray = try json.data.get()
                     guard 0 <= idx && idx < array.count else { throw JSONError.InvalidIndex(path: path, value: array as [AnyObject]) }
                     json = JSON(array[idx], path: path)
             }
