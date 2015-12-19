@@ -30,7 +30,7 @@ class LazyJSONTests: XCTestCase {
 
             measureBlock {
                 do {
-                    let parsed = try [TestModel].decode(json, root: "types")
+                    let parsed: [TestModel] = try decode(json, root: "types")
                     if firstElem == nil { firstElem = parsed }
                 } catch {
                     XCTFail("unexpected error: \(error)")
