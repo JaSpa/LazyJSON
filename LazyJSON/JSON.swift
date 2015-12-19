@@ -81,6 +81,10 @@ private class TypeBox {
 public struct JSON {
     private let data: TypeBox
 
+    public var path: KeyPath {
+        return data.path
+    }
+
     init(_ json: AnyObject) {
         data = TypeBox(json: json)
     }
