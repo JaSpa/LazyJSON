@@ -47,6 +47,16 @@ public func ??<A, B>(f: A throws -> B, @autoclosure(escaping) fallback: () -> B)
     }
 }
 
+public func ??<A, B>(f: A throws -> B, @autoclosure(escaping) fallback: () throws -> B) -> A throws -> B {
+    return {
+        do {
+            return try f($0)
+        } catch _ {
+            return try fallback()
+        }
+    }
+}
+
 public func curry<A, B, R>(f: (A, B) -> R) -> A -> B -> R {
     return { a in
            { b in f(a, b) } }
