@@ -6,10 +6,12 @@
 //  Copyright © 2015 jds. All rights reserved.
 //
 
-public enum KeyPathElem: StringLiteralConvertible, IntegerLiteralConvertible, CustomStringConvertible {
+public enum KeyPathElem {
     case Key(String)
     case Index(Int)
+}
 
+extension KeyPathElem: StringLiteralConvertible, IntegerLiteralConvertible {
     public init(unicodeScalarLiteral value: String) {
         self = .Key(value)
     }
@@ -25,11 +27,13 @@ public enum KeyPathElem: StringLiteralConvertible, IntegerLiteralConvertible, Cu
     public init(integerLiteral value: Int) {
         self = .Index(value)
     }
+}
 
+extension KeyPathElem: CustomStringConvertible {
     public var description: String {
         switch self {
-            case let .Key(key): return key
-            case let .Index(idx): return String(idx)
+        case let .Key(key): return key
+        case let .Index(idx): return String(idx)
         }
     }
 }
