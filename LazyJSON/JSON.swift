@@ -85,6 +85,16 @@ public struct JSON {
         return data.path
     }
 
+    var isNull: Bool {
+        return (try? data.resolve()).map { type in
+            if case .Null = type {
+                return true
+            } else {
+                return false
+            }
+        } ?? true
+    }
+
     init(_ json: AnyObject) {
         data = TypeBox(json: json)
     }

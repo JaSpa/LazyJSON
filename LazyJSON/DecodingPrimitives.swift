@@ -54,8 +54,14 @@ private func optional<A>(path: [KeyPathElem], decoder: Decoder<A>.Function) -> D
             value = try json.get(path)
         } catch JSONError.MissingKey {
             return nil
+        } catch JSONError.NullValue {
+            return nil
         } catch {
             throw error
+        }
+
+        if value.isNull {
+            return nil
         }
 
         return try decoder(value)
