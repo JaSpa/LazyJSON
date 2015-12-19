@@ -17,7 +17,7 @@ struct User {
 extension User: Decodable {
     typealias DecodedType = User
     static var decoder: Decoder<DecodedType>.Function {
-        return curry(self.init)
+        return { id in { name in { email in User(id: id, name: name, email: email) } } }
             <^> <~"id"
             <*> <~["userinfo", "name"] <|> <~"name"
             <*> <~?"email"
@@ -66,22 +66,13 @@ struct TestModelNumerics {
 extension TestModelNumerics: Decodable {
     typealias DecodedType = TestModelNumerics
     static var decoder: Decoder<DecodedType>.Function {
-        return curry(self.init)
+        return { i in { i64 in { d in { f in { iOpt in TestModelNumerics(int: i, int64: i64, double: d, float: f, intOpt: iOpt) } } } } }
             <^> <~"int"
             <*> <~"int64"
             <*> <~"double"
             <*> <~"float"
             <*> <~?"int_opt"
     }
-}
-
-private func curry<A, B, C, D, E, R>(f: (A, B, C, D, E) -> R) -> A -> B -> C -> D -> E -> R {
-    return
-        { a in
-        { b in
-        { c in
-        { d in
-        { e in f(a, b, c, d, e) } } } } }
 }
 
 private func curry<A, B, C, D, E, G, H, I, J, R>(f: (A, B, C, D, E, G, H, I, J) -> R) -> A -> B -> C -> D -> E -> G -> H -> I -> J -> R {
