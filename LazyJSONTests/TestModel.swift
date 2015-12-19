@@ -18,9 +18,9 @@ extension User: Decodable {
     typealias DecodedType = User
     static var decoder: Decoder<DecodedType>.Function {
         return curry(self.init)
-            <^> key("id")
-            <*> key("userinfo", "name") <|> key("name")
-            <*> optKey("email")
+            <^> <~"id"
+            <*> <~["userinfo", "name"] <|> <~"name"
+            <*> <~?"email"
     }
 }
 
@@ -39,17 +39,19 @@ struct TestModel {
 extension TestModel: Decodable {
     typealias DecodedType = TestModel
     static var decoder: Decoder<DecodedType>.Function {
-        let curriedInit = curry(self.init)
-        return curriedInit
-            <^> key("numerics")
-            <*> key("nested", "string")
-            <*> key("bool")
-            <*> arrKey("string_array")
-            <*> optArrKey("string_array_opt")
-            <*> arrKey("embedded", "string_array")
-            <*> optArrKey("embedded", "string_array_opt")
-            <*> optKey("user_opt")
-            <*> dictKey("dict")
+        // Without this split, the compiler fails (no segfault, just won't finish)
+        let applied1 = curry(self.init)
+            <^> <~"numerics"
+            <*> <~["nested", "string"]
+            <*> <~"bool"
+            <*> <|"string_array"
+            <*> <|?"string_array_opt"
+
+        return applied1
+            <*> <|["embedded", "string_array"]
+            <*> <|?["embedded", "string_array_opt"]
+            <*> <~?"user_opt"
+            <*> <&"dict"
     }
 }
 
@@ -65,11 +67,11 @@ extension TestModelNumerics: Decodable {
     typealias DecodedType = TestModelNumerics
     static var decoder: Decoder<DecodedType>.Function {
         return curry(self.init)
-            <^> key("int")
-            <*> key("int64")
-            <*> key("double")
-            <*> key("float")
-            <*> optKey("int_opt")
+            <^> <~"int"
+            <*> <~"int64"
+            <*> <~"double"
+            <*> <~"float"
+            <*> <~?"int_opt"
     }
 }
 

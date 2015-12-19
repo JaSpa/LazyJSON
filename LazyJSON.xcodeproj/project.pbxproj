@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		210FAA931C25AE8D0091255A /* DecodingOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210FAA911C25A4690091255A /* DecodingOperators.swift */; };
+		210FAA941C25AE8E0091255A /* DecodingOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210FAA911C25A4690091255A /* DecodingOperators.swift */; };
+		210FAA961C25B5540091255A /* DecodingPrimitives.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210FAA951C25B5540091255A /* DecodingPrimitives.swift */; };
 		2180852F1C22032A0085DA90 /* JSONError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2180852E1C22032A0085DA90 /* JSONError.swift */; };
 		218085331C220ED00085DA90 /* KeyPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218085321C220ED00085DA90 /* KeyPath.swift */; };
 		218085351C22120A0085DA90 /* Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218085341C22120A0085DA90 /* Decodable.swift */; };
@@ -86,6 +89,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		210FAA911C25A4690091255A /* DecodingOperators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DecodingOperators.swift; sourceTree = "<group>"; };
+		210FAA951C25B5540091255A /* DecodingPrimitives.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DecodingPrimitives.swift; sourceTree = "<group>"; };
 		2180852E1C22032A0085DA90 /* JSONError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONError.swift; sourceTree = "<group>"; };
 		218085321C220ED00085DA90 /* KeyPath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyPath.swift; sourceTree = "<group>"; };
 		218085341C22120A0085DA90 /* Decodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Decodable.swift; sourceTree = "<group>"; };
@@ -201,6 +206,8 @@
 			children = (
 				218085341C22120A0085DA90 /* Decodable.swift */,
 				21BFA9251C237CB200901217 /* Decoding.swift */,
+				210FAA951C25B5540091255A /* DecodingPrimitives.swift */,
+				210FAA911C25A4690091255A /* DecodingOperators.swift */,
 				218085361C2213010085DA90 /* StandardTypes.swift */,
 				2188DCEA1C20D5EF003242F2 /* JSON.swift */,
 				218085321C220ED00085DA90 /* KeyPath.swift */,
@@ -536,6 +543,8 @@
 				2180852F1C22032A0085DA90 /* JSONError.swift in Sources */,
 				21BFA9291C23886400901217 /* FunctionalStyle.swift in Sources */,
 				21BFA9281C2385EB00901217 /* Decoding.swift in Sources */,
+				210FAA931C25AE8D0091255A /* DecodingOperators.swift in Sources */,
+				210FAA961C25B5540091255A /* DecodingPrimitives.swift in Sources */,
 				218085371C2213010085DA90 /* StandardTypes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -559,6 +568,7 @@
 				21BFA95F1C24AAC400901217 /* StandardTypes.swift in Sources */,
 				21BFA95D1C24AAC400901217 /* Decodable.swift in Sources */,
 				21BFA9631C24AAC400901217 /* FunctionalStyle.swift in Sources */,
+				210FAA941C25AE8E0091255A /* DecodingOperators.swift in Sources */,
 				21BFA9601C24AAC400901217 /* JSON.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
