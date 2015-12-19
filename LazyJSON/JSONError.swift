@@ -8,6 +8,8 @@
 
 public enum JSONError: ErrorType {
     case InvalidType(path: KeyPath, expected: Any.Type, value: AnyObject)
+    case InvalidIndex(path: KeyPath, value: [AnyObject])
+    case NullValue(path: KeyPath)
     case MissingKey(path: KeyPath)
     case Multiple([ErrorType])
 

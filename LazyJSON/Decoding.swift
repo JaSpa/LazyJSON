@@ -7,21 +7,21 @@
 //
 
 public extension Decodable {
-    static func decode(json: AnyObject, root: String...) throws -> DecodedType {
+    static func decode(json: AnyObject, root: KeyPathElem...) throws -> DecodedType {
         return try decoder(JSON(json).get(root))
     }
 }
 
 public extension Array where Element: Decodable, Element.DecodedType == Element {
     typealias DecodedType = [Element]
-    static func decode(json: AnyObject, root: String...) throws -> DecodedType {
+    static func decode(json: AnyObject, root: KeyPathElem...) throws -> DecodedType {
         return try Element.decodeArray(JSON(json).get(root))
     }
 }
 
 public extension Dictionary where Value: Decodable, Value.DecodedType == Value {
     typealias DecodedType = [String: Value.DecodedType]
-    static func decode(json: AnyObject, root: String...) throws -> DecodedType {
+    static func decode(json: AnyObject, root: KeyPathElem...) throws -> DecodedType {
         return try Value.decodeDictionary(JSON(json).get(root))
     }
 }
@@ -30,27 +30,27 @@ public func decode<A: Decodable>(json: AnyObject) throws -> A.DecodedType {
     return try A.decode(json)
 }
 
-public func key<A: Decodable where A.DecodedType == A>(path: String...) -> Decoder<A>.Function {
+public func key<A: Decodable where A.DecodedType == A>(path: KeyPathElem...) -> Decoder<A>.Function {
     return { try A.decoder(try $0.get(path)) }
 }
 
-public func optKey<A: Decodable where A.DecodedType == A>(path: String...) -> Decoder<A?>.Function {
+public func optKey<A: Decodable where A.DecodedType == A>(path: KeyPathElem...) -> Decoder<A?>.Function {
     return optional(path, decoder: A.decoder)
 }
 
-public func arrKey<A: Decodable where A.DecodedType == A>(path: String...) -> Decoder<[A]>.Function {
+public func arrKey<A: Decodable where A.DecodedType == A>(path: KeyPathElem...) -> Decoder<[A]>.Function {
     return { try A.decodeArray(try $0.get(path)) }
 }
 
-public func optArrKey<A: Decodable where A.DecodedType == A>(path: String...) -> Decoder<[A]?>.Function {
+public func optArrKey<A: Decodable where A.DecodedType == A>(path: KeyPathElem...) -> Decoder<[A]?>.Function {
     return optional(path, decoder: A.decodeArray)
 }
 
-public func dictKey<A: Decodable where A.DecodedType == A>(path: String...) -> Decoder<[String: A]>.Function {
+public func dictKey<A: Decodable where A.DecodedType == A>(path: KeyPathElem...) -> Decoder<[String: A]>.Function {
     return { try A.decodeDictionary(try $0.get(path)) }
 }
 
-public func optDictKey<A: Decodable where A.DecodedType == A>(path: String...) -> Decoder<[String: A]?>.Function {
+public func optDictKey<A: Decodable where A.DecodedType == A>(path: KeyPathElem...) -> Decoder<[String: A]?>.Function {
     return optional(path, decoder: A.decodeDictionary)
 }
 
@@ -70,7 +70,7 @@ private extension Decodable {
     }
 }
 
-private func optional<A>(path: [String], decoder: Decoder<A>.Function) -> Decoder<A?>.Function {
+private func optional<A>(path: [KeyPathElem], decoder: Decoder<A>.Function) -> Decoder<A?>.Function {
     return { json in
         let value: JSON
 
