@@ -6,16 +6,15 @@
 //  Copyright © 2015 jds. All rights reserved.
 //
 
-typealias JSONArray = [AnyObject]
-typealias JSONObject = [String: AnyObject]
+import Foundation
 
 private class TypeBox {
     enum Type {
         case Null
         case String(Swift.String)
         case Number(NSNumber)
-        case Array(JSONArray)
-        case Object(JSONObject)
+        case Array(NSArray)
+        case Object(NSDictionary)
         case Unresolved(AnyObject)
 
         var value: AnyObject {
@@ -48,12 +47,12 @@ private class TypeBox {
         return str
     }
 
-    func get() throws -> JSONArray {
+    func get() throws -> NSArray {
         guard case let .Array(ary) = try resolve() else { return try typeError() }
         return ary
     }
 
-    func get() throws -> JSONObject {
+    func get() throws -> NSDictionary {
         guard case let .Object(obj) = try resolve() else { return try typeError() }
         return obj
     }
@@ -64,8 +63,8 @@ private class TypeBox {
         switch value {
         case let value as String: type = .String(value)
         case let value as NSNumber: type = .Number(value)
-        case let value as [AnyObject]: type = .Array(value)
-        case let value as [String: AnyObject]: type = .Object(value)
+        case let value as NSArray: type = .Array(value)
+        case let value as NSDictionary: type = .Object(value)
         default:
             type = .Null
             throw JSONError.NullValue(path: path)
@@ -98,8 +97,8 @@ public struct JSON {
         return try data.get()
     }
 
-    func getArray() throws -> LazyMapSequence<EnumerateSequence<[AnyObject]>, JSON> {
-        let ary: [AnyObject] = try data.get()
+    func getArray() throws -> LazyMapSequence<EnumerateSequence<NSArray>, JSON> {
+        let ary: NSArray = try data.get()
         return ary.enumerate().lazy.map { JSON($1, path: self.data.path + String($0)) }
     }
 
@@ -111,13 +110,13 @@ public struct JSON {
 
             switch key {
                 case let .Key(key):
-                    let object: JSONObject = try data.get()
+                    let object: NSDictionary = try data.get()
                     guard let value = object[key] else { throw JSONError.MissingKey(path: path) }
                     json = JSON(value, path: path)
 
                 case let .Index(idx):
-                    let array: JSONArray = try data.get()
-                    guard 0 <= idx && idx < array.count else { throw JSONError.InvalidIndex(path: path, value: array) }
+                    let array: NSArray = try data.get()
+                    guard 0 <= idx && idx < array.count else { throw JSONError.InvalidIndex(path: path, value: array as [AnyObject]) }
                     json = JSON(array[idx], path: path)
             }
         }
@@ -126,11 +125,12 @@ public struct JSON {
     }
 
     func objectGenerator() throws -> AnyGenerator<(String, JSON)> {
-        let object: JSONObject = try data.get()
-        var generator = object.generate()
+        let object: NSDictionary = try data.get()
+        let generator = object.generate()
         return anyGenerator { [path = data.path] in
             generator.next().map {
-                ($0, JSON($1, path: path + $0))
+                let key = $0 as! String
+                return (key, JSON($1, path: path + key))
             }
         }
     }

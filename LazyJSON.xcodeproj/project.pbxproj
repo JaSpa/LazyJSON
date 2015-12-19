@@ -953,6 +953,7 @@
 				21BFA93A1C24A7F700901217 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		21BFA9471C24A81300901217 /* Build configuration list for PBXNativeTarget "LazyJSONTests-iOS" */ = {
 			isa = XCConfigurationList;
@@ -961,6 +962,7 @@
 				21BFA9491C24A81300901217 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		21BFA9941C24BA0B00901217 /* Build configuration list for PBXNativeTarget "Profiler-iOS" */ = {
 			isa = XCConfigurationList;
@@ -969,6 +971,7 @@
 				21BFA9961C24BA0B00901217 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		21BFA9A71C24BA2400901217 /* Build configuration list for PBXNativeTarget "Profiler-Mac" */ = {
 			isa = XCConfigurationList;
@@ -977,6 +980,7 @@
 				21BFA9A91C24BA2400901217 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
