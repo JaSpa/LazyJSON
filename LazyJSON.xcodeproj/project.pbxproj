@@ -10,6 +10,7 @@
 		210FAA931C25AE8D0091255A /* DecodingOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210FAA911C25A4690091255A /* DecodingOperators.swift */; };
 		210FAA941C25AE8E0091255A /* DecodingOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210FAA911C25A4690091255A /* DecodingOperators.swift */; };
 		210FAA961C25B5540091255A /* DecodingPrimitives.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210FAA951C25B5540091255A /* DecodingPrimitives.swift */; };
+		210FAAB61C26EE920091255A /* DecodingPrimitives.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210FAA951C25B5540091255A /* DecodingPrimitives.swift */; };
 		2180852F1C22032A0085DA90 /* JSONError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2180852E1C22032A0085DA90 /* JSONError.swift */; };
 		218085331C220ED00085DA90 /* KeyPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218085321C220ED00085DA90 /* KeyPath.swift */; };
 		218085351C22120A0085DA90 /* Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218085341C22120A0085DA90 /* Decodable.swift */; };
@@ -571,6 +572,7 @@
 				21BFA95D1C24AAC400901217 /* Decodable.swift in Sources */,
 				21BFA9631C24AAC400901217 /* FunctionalStyle.swift in Sources */,
 				210FAA941C25AE8E0091255A /* DecodingOperators.swift in Sources */,
+				210FAAB61C26EE920091255A /* DecodingPrimitives.swift in Sources */,
 				21BFA9601C24AAC400901217 /* JSON.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -668,7 +670,6 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -715,7 +716,6 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
