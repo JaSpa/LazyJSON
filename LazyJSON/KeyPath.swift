@@ -47,22 +47,34 @@ public enum KeyPath {
     }
 }
 
-extension KeyPath: CustomStringConvertible {
-    public var description: String {
-        // Just a .Root node is shown as `/'
-        guard case .Elem = self else { return "/" }
+public extension KeyPath {
 
-        // A path is show without the leading `/'
-        // but the path elements separated by `.'
-        var pathElems: [String] = []
+    var bottomUpGenerator: AnyGenerator<KeyPathElem> {
         var path = self
 
-        while case let .Elem(parent, elem) = path {
-            pathElems.append(String(elem))
+        return anyGenerator {
+            guard case let .Elem(parent, elem) = path else { return nil }
             path = parent
+            return elem
         }
+    }
 
-        return pathElems.reverse().joinWithSeparator(".")
+    var keyPathArray: [KeyPathElem] {
+        return bottomUpGenerator.reverse()
+    }
+
+    var isRoot: Bool {
+        if case .Root = self {
+            return true
+        } else {
+            return false
+        }
+    }
+}
+
+extension KeyPath: CustomStringConvertible {
+    public var description: String {
+        return isRoot ? "/" : keyPathArray.map { String($0) }.joinWithSeparator(".")
     }
 }
 
