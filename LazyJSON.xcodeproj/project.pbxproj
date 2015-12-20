@@ -91,6 +91,7 @@
 /* Begin PBXFileReference section */
 		210FAA911C25A4690091255A /* DecodingOperators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DecodingOperators.swift; sourceTree = "<group>"; };
 		210FAA951C25B5540091255A /* DecodingPrimitives.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DecodingPrimitives.swift; sourceTree = "<group>"; };
+		210FAA971C26C0690091255A /* README.md */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; tabWidth = 2; };
 		2180852E1C22032A0085DA90 /* JSONError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONError.swift; sourceTree = "<group>"; };
 		218085321C220ED00085DA90 /* KeyPath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyPath.swift; sourceTree = "<group>"; };
 		218085341C22120A0085DA90 /* Decodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Decodable.swift; sourceTree = "<group>"; };
@@ -180,6 +181,7 @@
 		2188DCC61C20D5C7003242F2 = {
 			isa = PBXGroup;
 			children = (
+				210FAA971C26C0690091255A /* README.md */,
 				2188DCD21C20D5C7003242F2 /* LazyJSON */,
 				2188DCDE1C20D5C8003242F2 /* LazyJSONTests */,
 				21BFA99C1C24BA2400901217 /* Profiler-Mac */,
