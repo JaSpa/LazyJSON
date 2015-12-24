@@ -19,11 +19,11 @@ struct Person {
 extension Person: Decodable {
     static var decoder: Decoder<Person>.Function {
         return curry(self.init)
-            <^> key(.Key("firstName"))
-            <*> optKey(.Key("secondName"))
-            <*> key(.Key("age"))
-            <*> arrKey(.Key("hobbies"))
-            <*> key(.Key("description"))
+            <^> <~"firstName"
+            <*> <~?"secondName"
+            <*> <~"age"
+            <*> <|"hobbies"
+            <*> <~"description"
     }
 }
 
