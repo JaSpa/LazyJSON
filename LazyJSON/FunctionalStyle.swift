@@ -11,8 +11,8 @@ infix operator <*> { associativity left precedence 130 }
 infix operator >>- { associativity left precedence 100 }
 infix operator <|> { associativity left precedence 140 }
 
-public func <^><A, B, C>(f: B -> C, value: A throws -> B) -> A throws -> C {
-    return { f(try value($0)) }
+public func <^><A, B, C>(f: B throws -> C, value: A throws -> B) -> A throws -> C {
+    return { try f(try value($0)) }
 }
 
 public func <*><A, B, C>(f: A throws -> B -> C, value: A throws -> B) -> A throws -> C {
