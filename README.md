@@ -1,3 +1,7 @@
+In the beginnings of Swift when everyone was writing JSON libraries, this was my take on it. I never returned to it though and it would probably take some work to get it to compile with current versions of the compiler.
+
+Anyways the introduction of `Codable` should have obliviated the need for any custom decoding libraries.
+
 # LazyJSON
 
 *LazyJSON* is a library for extracting model objects out of JSON values in a fast, type-safe and extensible way.
@@ -113,10 +117,4 @@ If you want to extract a type `A` where `A` is `Decodable`, then `A.DecodedType`
 
 ## Contributing
 
-As this project is in a very early stage, feel free to open issues and pull requestes for feature requests, improvements and bug-fixes.
-
-### Things to be done:
-
-  - Write a test suite
-  - Document the code
-  - Think about better extracting operators (`<~`, `<|` and `<&`)
+This project is unmaintained.
